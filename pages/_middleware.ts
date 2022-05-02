@@ -17,10 +17,10 @@ export default function middleware(req: NextRequest) {
       statusText: "No hostname found in request headers",
     });
 
-  // Only for demo purposes – remove this if you want to use your root domain as the landing page
-  if (hostname === "milna.cc" || hostname === "platforms.vercel.app") {
-    return NextResponse.redirect("https://demo.milna.cc");
-  }
+  // // Only for demo purposes – remove this if you want to use your root domain as the landing page
+  // if (hostname === "milna.cc" || hostname === "platforms.vercel.app") {
+  //   return NextResponse.redirect("https://demo.milna.cc");
+  // }
 
   const currentHost =
     process.env.NODE_ENV === "production" && process.env.VERCEL === "1"
