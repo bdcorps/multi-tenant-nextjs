@@ -37,10 +37,10 @@ export default function middleware(req: NextRequest) {
   // hostname milna.cc
   // currentHost sukh -> sukh.milna.cc
 
-  if (pathname.startsWith(`/_sites`))
-    return new Response(null, {
-      status: 404,
-    });
+  // if (pathname.startsWith(`/_sites`))
+  //   return new Response(null, {
+  //     status: 404,
+  //   });
 
   if (!pathname.includes(".") && !pathname.startsWith("/api")) {
     if (currentHost == "app") {
