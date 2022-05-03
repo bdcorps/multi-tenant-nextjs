@@ -32,6 +32,11 @@ export default function middleware(req: NextRequest) {
         .replace(`.platformize.vercel.app`, "")
       : hostname.replace(`.localhost:3000`, "");
 
+
+  // pathname /blog/123
+  // hostname milna.cc
+  // currentHost sukh -> sukh.milna.cc
+
   if (pathname.startsWith(`/_sites`))
     return new Response(null, {
       status: 404,
