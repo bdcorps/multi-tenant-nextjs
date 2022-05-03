@@ -120,3 +120,4 @@ The MIT License.
   <img src="https://badgen.net/badge/icon/Made%20by%20Vercel?icon=zeit&label&color=black&labelColor=black">
 </a>
 # multi-tenant-nextjs
+# basic-multi-tenant
